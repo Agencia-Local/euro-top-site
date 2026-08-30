@@ -654,7 +654,7 @@ button {
 }
 
 .authority__art {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 16 / 9;
   border-radius: var(--radius-card);
   overflow: hidden;
   background: var(--color-gray-light);
