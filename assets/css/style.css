@@ -166,7 +166,9 @@ button {
 }
 
 .eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 14px;
@@ -174,6 +176,15 @@ button {
   text-transform: uppercase;
   color: var(--color-primary-dark);
   margin-bottom: var(--space-2);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
 }
 
 /* Só aplica o estado inicial "invisível" quando JS está ativo
@@ -275,6 +286,11 @@ button {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 18px;
+}
+
+.brand span {
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 2px;
 }
 
 .brand img {
