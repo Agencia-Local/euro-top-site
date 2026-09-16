@@ -1198,8 +1198,7 @@ button {
   }
 
   .top-bar__contacts {
-    justify-content: center;
-    gap: var(--space-2);
+    display: none;
   }
 
   .hero-carousel__slide {
