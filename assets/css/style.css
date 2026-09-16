@@ -15,6 +15,8 @@
   --color-gray-light: #e5e2e1;
   --color-white: #fefefe;
   --color-cream: #faf7f2;
+  --color-mint: #eaf8ee;
+  --color-brand-dark: #12301f;
 
   /* Texto */
   --color-text: #2c2a29;
@@ -144,6 +146,10 @@ button {
   background: var(--color-cream);
 }
 
+.section--mint {
+  background: var(--color-mint);
+}
+
 .section--primary {
   background: var(--color-primary);
   color: var(--color-on-primary);
@@ -261,12 +267,61 @@ button {
   font-size: 15px;
 }
 
+/* ---------- Barra superior ---------- */
+.top-bar {
+  background: var(--color-brand-dark);
+  color: var(--color-white);
+  font-size: 13px;
+}
+
+.top-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 9px 0;
+  flex-wrap: wrap;
+}
+
+.top-bar__message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.top-bar__message svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.top-bar__contacts {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.top-bar__contacts a {
+  opacity: 0.88;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.top-bar__contacts a:hover {
+  opacity: 1;
+  color: var(--color-primary);
+}
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(254, 254, 254, 0.96);
+  background: rgba(234, 248, 238, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--color-gray-light);
 }
@@ -425,6 +480,173 @@ button {
   flex-shrink: 0;
 }
 
+/* ---------- Carrossel de banners (Home) ---------- */
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-mint);
+}
+
+.hero-carousel__viewport {
+  overflow: hidden;
+}
+
+.hero-carousel__track {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.45, 0, 0.2, 1);
+}
+
+.js .hero-carousel__track {
+  will-change: transform;
+}
+
+.hero-carousel__slide {
+  flex: 0 0 100%;
+  display: block;
+  aspect-ratio: 8 / 3;
+}
+
+.hero-carousel__slide picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(18, 48, 32, 0.45);
+  color: var(--color-white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.hero-carousel__arrow:hover {
+  background: rgba(18, 48, 32, 0.7);
+}
+
+.hero-carousel__arrow svg {
+  width: 22px;
+  height: 22px;
+}
+
+.hero-carousel__arrow--prev {
+  left: var(--space-3);
+}
+
+.hero-carousel__arrow--next {
+  right: var(--space-3);
+}
+
+.hero-carousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(to top, rgba(18, 48, 32, 0.4), rgba(18, 48, 32, 0));
+  pointer-events: none;
+}
+
+.hero-carousel__dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--space-3);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero-carousel__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(254, 254, 254, 0.55);
+  border: none;
+  padding: 0;
+  transition: background-color 0.2s ease, width 0.2s ease;
+}
+
+.hero-carousel__dot.is-active {
+  background: var(--color-white);
+  width: 26px;
+}
+
+/* ---------- Ícones de categoria (Home) ---------- */
+.category-icons {
+  background: var(--color-mint);
+  padding: var(--space-4) 0;
+}
+
+.category-icons__grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.category-icons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 128px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.category-icons__item:hover {
+  transform: translateY(-3px);
+}
+
+.category-icons__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-primary-dark);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.category-icons__item:hover .category-icons__icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.category-icons__icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.category-icons__item span {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
 /* ---------- Benefícios / ícones ---------- */
 .benefits-grid {
   display: grid;
@@ -514,6 +736,7 @@ button {
 }
 
 .product-card {
+  position: relative;
   background: var(--color-white);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
@@ -521,6 +744,17 @@ button {
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-primary);
+  z-index: 1;
 }
 
 .product-card:hover {
@@ -562,6 +796,48 @@ button {
 
 .product-card__cta {
   align-self: flex-start;
+}
+
+.product-card__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.product-card__deal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 18px;
+  border-radius: var(--radius-pill);
+  transition: background-color 0.2s ease;
+}
+
+.product-card__deal:hover {
+  background: var(--color-primary-dark);
+}
+
+.product-card__deal svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.product-card__view {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.product-card__view:hover {
+  color: var(--color-primary-dark);
 }
 
 /* ---------- FAQ ---------- */
@@ -753,8 +1029,8 @@ button {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: #211f1e;
-  color: #d9d6d5;
+  background: var(--color-brand-dark);
+  color: #d9e5db;
   padding: var(--space-7) 0 var(--space-4);
 }
 
@@ -772,7 +1048,7 @@ button {
 }
 
 .footer-brand p {
-  color: #a8a4a3;
+  color: #a9c4b1;
   font-size: 15px;
 }
 
@@ -801,7 +1077,7 @@ button {
   justify-content: space-between;
   gap: var(--space-2);
   font-size: 13px;
-  color: #8a8685;
+  color: #82a68d;
 }
 
 /* ---------- Botão flutuante WhatsApp (mobile) ---------- */
@@ -850,6 +1126,18 @@ button {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-carousel__slide {
+    aspect-ratio: 16 / 9;
+  }
+
+  .category-icons__grid {
+    gap: var(--space-3);
+  }
+
+  .category-icons__item {
+    width: 96px;
   }
 }
 
@@ -902,6 +1190,47 @@ button {
 
   .whatsapp-float {
     display: flex;
+  }
+
+  .top-bar__inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-bar__contacts {
+    justify-content: center;
+    gap: var(--space-2);
+  }
+
+  .hero-carousel__slide {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-carousel__arrow {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-carousel__arrow--prev {
+    left: 8px;
+  }
+
+  .hero-carousel__arrow--next {
+    right: 8px;
+  }
+
+  .category-icons__grid {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+    margin: 0 calc(var(--space-3) * -1);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
+  .category-icons__item {
+    flex-shrink: 0;
   }
 }
 

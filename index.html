@@ -14,6 +14,20 @@
 </head>
 <body>
 
+<div class="top-bar">
+  <div class="container top-bar__inner">
+    <span class="top-bar__message">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      Entregamos para todo o Brasil
+    </span>
+    <div class="top-bar__contacts">
+      <a href="tel:08002910101">0800 291 0101</a>
+      <a href="https://wa.me/5511980456727" target="_blank" rel="noopener">Vendas: (11) 98045-6727</a>
+      <a href="https://wa.me/5511960427353" target="_blank" rel="noopener">SAC: (11) 96042-7353</a>
+    </div>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="container site-header__bar">
     <a href="index.html" class="brand">
@@ -41,37 +55,95 @@
 
 <main>
 
-  <section class="hero">
-    <div class="container hero__grid">
-      <div>
-        <span class="eyebrow">Suplementos naturais</span>
-        <h1>Mais saúde e bem-estar em cada etapa da sua rotina.</h1>
-        <p>A Euro Top é uma linha de suplementos naturais pensada para apoiar sua saúde e qualidade de vida no dia a dia, com atendimento direto e humano, sem complicação.</p>
-        <div class="hero__actions">
-          <a class="btn btn-primary" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Euro%20Top%20e%20quero%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
-            Falar no WhatsApp
-          </a>
-          <a class="btn btn-outline--dark" href="produtos.html">Ver produtos</a>
-        </div>
-        <div class="hero__badges">
-          <span class="hero__badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13V6a1 1 0 0 1 1-1h7a7 7 0 0 1 7 7 7 7 0 0 1-7 7z"/><path d="M4 13c0-4 4-6 8-8"/></svg>
-            Fórmulas naturais
-          </span>
-          <span class="hero__badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Atendimento direto
-          </span>
-        </div>
+  <section class="hero-carousel" aria-label="Destaques Euro Top">
+    <div class="hero-carousel__viewport">
+      <div class="hero-carousel__track">
+        <a class="hero-carousel__slide" href="produtos/q10-coenzima.html">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/img/banners/mobile/q10-coenzima.jpg">
+            <img src="assets/img/banners/q10-coenzima.jpg" alt="Q10 Coenzima Euro Top — energia e proteção para suas células" loading="eager">
+          </picture>
+        </a>
+        <a class="hero-carousel__slide" href="produtos/colageno.html">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/img/banners/mobile/colageno.jpg">
+            <img src="assets/img/banners/colageno.jpg" alt="Colágeno II Euro Top — cuide da sua mobilidade todos os dias" loading="lazy">
+          </picture>
+        </a>
+        <a class="hero-carousel__slide" href="produtos/creatina.html">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/img/banners/mobile/creatina.jpg">
+            <img src="assets/img/banners/creatina.jpg" alt="Creatina Euro Top" loading="lazy">
+          </picture>
+        </a>
+        <a class="hero-carousel__slide" href="produtos/omega-3.html">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/img/banners/mobile/omega-3.jpg">
+            <img src="assets/img/banners/omega-3.jpg" alt="Ômega 3 Euro Top" loading="lazy">
+          </picture>
+        </a>
+        <a class="hero-carousel__slide" href="produtos/euro-woman.html">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/img/banners/mobile/euro-woman.jpg">
+            <img src="assets/img/banners/euro-woman.jpg" alt="Euro Woman Euro Top" loading="lazy">
+          </picture>
+        </a>
+        <a class="hero-carousel__slide" href="produtos/testo-power.html">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/img/banners/mobile/testo-power.jpg">
+            <img src="assets/img/banners/testo-power.jpg" alt="Testo Power Euro Top" loading="lazy">
+          </picture>
+        </a>
+        <a class="hero-carousel__slide" href="produtos/euro-power-max.html">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/img/banners/mobile/euro-power-max.jpg">
+            <img src="assets/img/banners/euro-power-max.jpg" alt="Euro Power Max Euro Top — mais energia e disposição para sua rotina diária" loading="lazy">
+          </picture>
+        </a>
       </div>
-      <div class="hero__art reveal">
-        <div class="hero__art-grid">
-          <img src="assets/img/produtos/omega-3-thumb.jpg" alt="Ômega 3 Euro Top">
-          <img src="assets/img/produtos/colageno-thumb.jpg" alt="Colágeno II Euro Top">
-          <img src="assets/img/produtos/q10-coenzima-thumb.jpg" alt="Q10 Coenzima Euro Top">
-          <img src="assets/img/produtos/euro-power-max-thumb.jpg" alt="Euro Power Max Euro Top">
-        </div>
+    </div>
+    <button type="button" class="hero-carousel__arrow hero-carousel__arrow--prev" aria-label="Banner anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button type="button" class="hero-carousel__arrow hero-carousel__arrow--next" aria-label="Próximo banner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="hero-carousel__dots"></div>
+  </section>
+
+  <section class="category-icons">
+    <div class="container">
+      <div class="category-icons__grid">
+        <a class="category-icons__item" href="produtos/q10-coenzima.html">
+          <span class="category-icons__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </span>
+          <span>Energia &amp; Performance</span>
+        </a>
+        <a class="category-icons__item" href="produtos/colageno.html">
+          <span class="category-icons__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </span>
+          <span>Mobilidade &amp; Articulações</span>
+        </a>
+        <a class="category-icons__item" href="produtos/euro-woman.html">
+          <span class="category-icons__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </span>
+          <span>Vitalidade Feminina</span>
+        </a>
+        <a class="category-icons__item" href="produtos/testo-power.html">
+          <span class="category-icons__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          </span>
+          <span>Vitalidade Masculina</span>
+        </a>
+        <a class="category-icons__item" href="produtos/omega-3.html">
+          <span class="category-icons__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 8.5 7 13a7 7 0 1 1-14 0c0-4.5 7-13 7-13z"/></svg>
+          </span>
+          <span>Saúde do Coração</span>
+        </a>
       </div>
     </div>
   </section>
@@ -120,18 +192,24 @@
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Linha completa</span>
-        <h2>Produtos em destaque</h2>
-        <p>Conheça alguns dos suplementos naturais da Euro Top. Cada produto tem uma página própria com todos os detalhes.</p>
+        <h2>Suplementos naturais Euro Top</h2>
+        <p>Conheça os produtos da nossa linha e fale direto pelo WhatsApp para saber o desconto disponível para cada um.</p>
       </div>
       <div class="product-grid">
         <article class="product-card reveal">
-          <a href="produtos/omega-3.html" class="product-card__img">
-            <img src="assets/img/produtos/omega-3-thumb.jpg" alt="Ômega 3 Euro Top">
+          <a href="produtos/q10-coenzima.html" class="product-card__img">
+            <img src="assets/img/produtos/q10-coenzima-thumb.jpg" alt="Q10 Coenzima Euro Top">
           </a>
           <div class="product-card__body">
-            <h3><a href="produtos/omega-3.html">Ômega 3</a></h3>
-            <p>Suplemento alimentar de óleo de peixe em cápsulas.</p>
-            <a class="btn btn-outline--dark btn-sm product-card__cta" href="produtos/omega-3.html">Ver produto</a>
+            <h3><a href="produtos/q10-coenzima.html">Q10 Coenzima</a></h3>
+            <p>Coenzima Q10 + Vitamina E, em cápsulas.</p>
+            <div class="product-card__links">
+              <a class="product-card__deal" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Q10%20Coenzima%20da%20Euro%20Top%20e%20quero%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
+                Até 70% off no WhatsApp
+              </a>
+              <a class="product-card__view" href="produtos/q10-coenzima.html">Ver detalhes do produto</a>
+            </div>
           </div>
         </article>
         <article class="product-card reveal">
@@ -141,7 +219,13 @@
           <div class="product-card__body">
             <h3><a href="produtos/colageno.html">Colágeno II</a></h3>
             <p>Suplemento alimentar em cápsulas.</p>
-            <a class="btn btn-outline--dark btn-sm product-card__cta" href="produtos/colageno.html">Ver produto</a>
+            <div class="product-card__links">
+              <a class="product-card__deal" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Col%C3%A1geno%20II%20da%20Euro%20Top%20e%20quero%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
+                Até 70% off no WhatsApp
+              </a>
+              <a class="product-card__view" href="produtos/colageno.html">Ver detalhes do produto</a>
+            </div>
           </div>
         </article>
         <article class="product-card reveal">
@@ -151,22 +235,82 @@
           <div class="product-card__body">
             <h3><a href="produtos/creatina.html">Creatina</a></h3>
             <p>Suplemento alimentar em pó, bebida solúvel.</p>
-            <a class="btn btn-outline--dark btn-sm product-card__cta" href="produtos/creatina.html">Ver produto</a>
+            <div class="product-card__links">
+              <a class="product-card__deal" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Creatina%20da%20Euro%20Top%20e%20quero%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
+                Até 70% off no WhatsApp
+              </a>
+              <a class="product-card__view" href="produtos/creatina.html">Ver detalhes do produto</a>
+            </div>
           </div>
         </article>
         <article class="product-card reveal">
-          <a href="produtos/q10-coenzima.html" class="product-card__img">
-            <img src="assets/img/produtos/q10-coenzima-thumb.jpg" alt="Q10 Coenzima Euro Top">
+          <a href="produtos/euro-power-max.html" class="product-card__img">
+            <img src="assets/img/produtos/euro-power-max-thumb.jpg" alt="Euro Power Max Euro Top">
           </a>
           <div class="product-card__body">
-            <h3><a href="produtos/q10-coenzima.html">Q10 Coenzima</a></h3>
-            <p>Coenzima Q10 + Vitamina E, em cápsulas.</p>
-            <a class="btn btn-outline--dark btn-sm product-card__cta" href="produtos/q10-coenzima.html">Ver produto</a>
+            <h3><a href="produtos/euro-power-max.html">Euro Power Max</a></h3>
+            <p>Suplemento alimentar em cápsulas.</p>
+            <div class="product-card__links">
+              <a class="product-card__deal" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Euro%20Power%20Max%20da%20Euro%20Top%20e%20quero%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
+                Até 70% off no WhatsApp
+              </a>
+              <a class="product-card__view" href="produtos/euro-power-max.html">Ver detalhes do produto</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <a href="produtos/euro-woman.html" class="product-card__img">
+            <img src="assets/img/produtos/euro-woman-thumb.jpg" alt="Euro Woman Euro Top">
+          </a>
+          <div class="product-card__body">
+            <h3><a href="produtos/euro-woman.html">Euro Woman</a></h3>
+            <p>Feno-grego + Arginina + Taurina + D-Ribose + Vitamina B12, em gotas.</p>
+            <div class="product-card__links">
+              <a class="product-card__deal" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Euro%20Woman%20da%20Euro%20Top%20e%20quero%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
+                Até 70% off no WhatsApp
+              </a>
+              <a class="product-card__view" href="produtos/euro-woman.html">Ver detalhes do produto</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <a href="produtos/omega-3.html" class="product-card__img">
+            <img src="assets/img/produtos/omega-3-thumb.jpg" alt="Ômega 3 Euro Top">
+          </a>
+          <div class="product-card__body">
+            <h3><a href="produtos/omega-3.html">Ômega 3</a></h3>
+            <p>Suplemento alimentar de óleo de peixe em cápsulas.</p>
+            <div class="product-card__links">
+              <a class="product-card__deal" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Tenho%20interesse%20no%20%C3%94mega%203%20da%20Euro%20Top%20e%20quero%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
+                Até 70% off no WhatsApp
+              </a>
+              <a class="product-card__view" href="produtos/omega-3.html">Ver detalhes do produto</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <a href="produtos/testo-power.html" class="product-card__img">
+            <img src="assets/img/produtos/testo-power-thumb.jpg" alt="Testo Power Euro Top">
+          </a>
+          <div class="product-card__body">
+            <h3><a href="produtos/testo-power.html">Testo Power</a></h3>
+            <p>Feno-grego + Arginina + Taurina + D-Ribose + Vitamina B12, em gotas.</p>
+            <div class="product-card__links">
+              <a class="product-card__deal" href="https://wa.me/5511980456727?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Testo%20Power%20da%20Euro%20Top%20e%20quero%20saber%20sobre%20o%20desconto." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1 .08-1.62-.1-.37-.11-.85-.27-1.46-.53-2.57-1.11-4.25-3.7-4.38-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.23-.26.5-.32.67-.32.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.07.13.11.29.02.46-.09.17-.14.27-.27.42-.13.15-.28.33-.4.44-.13.13-.27.27-.12.53.15.26.67 1.1 1.44 1.78.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.21.56-.13.22.08 1.44.68 1.68.8.24.12.4.18.46.28.06.1.06.6-.16 1.22z"/></svg>
+                Até 70% off no WhatsApp
+              </a>
+              <a class="product-card__view" href="produtos/testo-power.html">Ver detalhes do produto</a>
+            </div>
           </div>
         </article>
       </div>
       <div style="text-align:center; margin-top: var(--space-5);">
-        <a class="btn btn-primary" href="produtos.html">Ver todos os 8 produtos</a>
+        <a class="btn btn-outline--dark" href="produtos.html">Ver o catálogo completo</a>
       </div>
     </div>
   </section>
