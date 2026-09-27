@@ -349,9 +349,10 @@ button {
 }
 
 .brand img {
-  height: 48px;
-  width: 48px;
+  height: 64px;
+  width: 64px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .main-nav {
@@ -1145,6 +1146,11 @@ button {
   :root {
     --space-7: 56px;
     --space-8: 72px;
+  }
+
+  .brand img {
+    height: 44px;
+    width: 44px;
   }
 
   .main-nav__links,
