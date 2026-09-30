@@ -365,7 +365,7 @@ button {
 
 .brand img {
   height: 64px;
-  width: 64px;
+  width: auto;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -1165,7 +1165,7 @@ button {
 
   .brand img {
     height: 44px;
-    width: 44px;
+    width: auto;
     margin-left: 8px;
   }
 
